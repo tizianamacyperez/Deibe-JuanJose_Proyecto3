@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+         <link rel="stylesheet" href="styles (2).css">
+</head>
+<body>
+ <div>
+        <h1>Formulario de FUTBOL</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrBCw-7Yi4PmJ6OGNmf6RxTXfr2vuxTeBy4oALmLeDN50XRNKrOlp97U&s=10" alt="futbol">
+
+        <p>Completa todos los campos para conocer más acerca de tus gustos/conocimientos sobre futbol</p>
+
+        <form action="#" method="POST" id="registroForm">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <div>
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" placeholder="Ej: juan@correo.com" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 11 1234-5678">
+                </div>
+                  <div>
+                    <label for="Edad">Edad</label>
+                    <input type="Edad" id="Edad" name="Edad" placeholder="Ej: 15 años">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Cuál es tu posición favorita?</legend>
+
+                <div>
+                    <label for="posición">posición *</label>
+                    <select id="posición" name="posición" required>
+                        <option value="">Selecciona una posición...</option>
+                        <option value="Arquero">Arquero</option>
+                        <option value="Defensor">Defensor</option>
+                        <option value="Mediocampista">Mediocampista</option>
+                        <option value="Delantero">Delantero</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>¿Qué competencias de fútbol conocés?</label>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="competencias" value="Mundial">
+                            Mundial
+                        </label>
+                        <label>
+                            <input type="checkbox" name="competencias" value="Champions League">
+                            Champions League
+                        </label>
+                        <label>
+                            <input type="checkbox" name="competencias" value="Copa Libertadores">
+                            Copa Libertadores
+                        </label>
+                        <label>
+                            <input type="checkbox" name="competencias" value="Copa América">
+                            Copa América
+                        </label>
+                        <label>
+                            <input type="checkbox" name="competencias" value="Europa League">
+                            Europa League
+                        </label>
+                    </div>
+                </div>
+  <div>
+                    <label>¿Te gusta mirar fútbol?</label>
+                    <div>
+                        <label>
+                            <input type="radio" name="gustos" value="Sí">
+                            Sí
+                        </label>
+                        <label>
+                            <input type="radio" name="gustos" value="No">
+                            No
+                        </label>
+                        <label>
+                            <input type="radio" name="gustos" value="A veces">
+                            A veces
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    
+            </fieldset>
+      <fieldset>
+                <legend>¿Cuál es tu tipo de fútbol favorito?</legend>
+
+                <div>
+                    <label for="posición">tipo *</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecciona un tipo de futbol...</option>
+                        <option value="Fútbol 11">Fútbol 11</option>
+                        <option value="Fútbol 7">Fútbol 7</option>
+                        <option value="Futsal">Futsal</option>
+                        <option value="Fútbol playa">Fútbol playa</option>
+                    </select>
+                </div>
+                 <div>
+                    <label>¿Cuántos jugadores tiene un equipo de fútbol en cancha?</label>
+                    <div>
+                        <label>
+                            <input type="radio" name="cantidad" value="7">
+                            7
+                        </label>
+                        <label>
+                            <input type="radio" name="cantidad" value="9">
+                           9
+                        </label>
+                        <label>
+                            <input type="radio" name="cantidad" value="11">
+                            11
+                        </label>
+                         <label>
+                            <input type="radio" name="cantidad" value="15">
+                            15
+                        </label>
+                    </div>
+                </div>
+                <div>
+                </fieldset>
+                <fieldset>
+        <div>
+                    <label for="comentarios">¿Cuál es tu jugador de fútbol favorito?</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe cuál es tu jugador de fútbol favorito..."></textarea>
+                </div>
+
+        <div>
+                    <label for="comentarios">¿Cuál es tu equipo de fútbol favorito?</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe cuál es tu equipo de fútbol favorito..."></textarea>
+                </div>
+
+                </fieldset>
+            <div>
+                <fieldset>
+                <label>
+                    <input type="checkbox" name="terminos" required>
+                    Acepto los <a href="#">términos y condiciones</a> *
+                </label>
+            </div>
+</fieldset>
+            
+            <div>
+                <button type="submit">Registrarse</button>
+                <button type="reset">Limpiar formulario</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
